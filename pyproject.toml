@@ -1,0 +1,17 @@
+[project]
+name = "nanocc"
+version = "0.1.0"
+description = "nanoCC — Claude Code in 500 lines of Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "litellm>=1.40.0,!=1.82.7,!=1.82.8",
+]
+
+[project.scripts]
+nanocc = "nanocc.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
